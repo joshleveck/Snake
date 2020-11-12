@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #cccccc;
+  }
+
+  #game-board {
+    background-color: #242424;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+  }
+
+  .snake {
+    background-color: #06ba32;
+    border: .25vmin solid black;
+  }
+
+  .food {
+    background-color: #f01111;
+    border: .25vmin solid black;
+  }
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    padding: 10px;
+  }
+  
+  .again {
+    margin-left: 45%;
+    margin-right: 100px;
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+  }
+
+  .again:hover  {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .score {
+    padding: 20px;
+    margin-top: -40%;
+    margin-left: 15px;
+    background-color: #fff;
+  }
+
+  #current, #time {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+  #final {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+  }
